@@ -1,0 +1,62 @@
+[
+  {
+    "maSV": 1,
+    "tenSV": "Minh",
+    "tuoi": 18,
+    "gioiTinh": "Male",
+    "ngaySinh": "01/01/2002",
+    "diemToan": 9,
+    "diemLy": 10,
+    "diemHoa": 9,
+    "diemAnh": 10,
+    "lop": "1A"
+  },
+  {
+    "maSV": 2,
+    "tenSV": "Linh",
+    "tuoi": 18,
+    "gioiTinh": "Female",
+    "ngaySinh": "02/02/2002",
+    "diemToan": 8,
+    "diemLy": 7,
+    "diemHoa": 8,
+    "diemAnh": 9,
+    "lop": "2A"
+  },
+  {
+    "maSV": 3,
+    "tenSV": "Bach",
+    "tuoi": 18,
+    "gioiTinh": "Male",
+    "ngaySinh": "03/03/2002",
+    "diemToan": 9,
+    "diemLy": 6,
+    "diemHoa": 7,
+    "diemAnh": 8,
+    "lop": "1A"
+  },
+  {
+    "maSV": 4,
+    "tenSV": "Tuan",
+    "tuoi": 18,
+    "gioiTinh": "Male",
+    "ngaySinh": "04/04/2002",
+    "diemToan": 7,
+    "diemLy": 6,
+    "diemHoa": 6,
+    "diemAnh": 9,
+    "lop": "2A"
+  },
+  {
+    "maSV": 5,
+    "tenSV": "Trang",
+    "tuoi": 18,
+    "gioiTinh": "Female",
+    "ngaySinh": "05/05/2002",
+    "diemToan": 10,
+    "diemLy": 10,
+    "diemHoa": 9,
+    "diemAnh": 10,
+    "lop": "1A"
+  }
+]
