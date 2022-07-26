@@ -40,11 +40,19 @@ function App() {
     setTasks([...tasks, newTask]);
   };
 
+  // delete tasks
   const deleteTask = (id) => {
-    setTasks(tasks.filter((remainTask) => remainTask.id !== id));
+    setTasks(tasks.filter((task) => task.id !== id));
   };
 
-  
+  //set reminder on tasks
+  const remindTask = (id) => {
+    setTasks(
+      tasks.map((task) =>
+        task.id === id ? { ...task, reminder: !task.reminder } : task
+      )
+    );
+  };
 
   return (
     <BrowserRouter>
@@ -56,7 +64,11 @@ function App() {
             element={
               <>
                 <AddTask onAdd={addTask} />
-                <Tasks tasks={tasks} onAdd={addTask} />
+                <Tasks
+                  tasks={tasks}
+                  onDelete={deleteTask}
+                  onRemind={remindTask}
+                />
                 <Link to="/about">About page</Link>
               </>
             }
