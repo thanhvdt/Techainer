@@ -29,15 +29,6 @@ class Student {
       (this.diemToan + this.diemLy + this.diemHoa + this.diemAnh) / 4;
   }
 
-  //so sanh diem trung binh
-  compareToAverage(diemCaoNhat, diemThapNhat) {
-    if (this.diemTrungBinh < diemThapNhat) {
-      return -1;
-    } else if (this.diemTrungBinh > diemCaoNhat) {
-      return 1;
-    }
-  }
-
   //doi diem sang chu
   convertLetterGrade(grade) {
     if (grade >= 8.5) return "A";
@@ -49,10 +40,10 @@ class Student {
   }
 
   getLetterGrade() {
-    this.diemChuToan = convertLetterGrade(this.diemToan);
-    this.diemChuLy = convertLetterGrade(this.diemLy);
-    this.diemChuHoa = convertLetterGrade(this.diemHoa);
-    this.diemChuAnh = convertLetterGrade(this.diemAnh);
+    this.diemChuToan = this.convertLetterGrade(this.diemToan);
+    this.diemChuLy = this.convertLetterGrade(this.diemLy);
+    this.diemChuHoa = this.convertLetterGrade(this.diemHoa);
+    this.diemChuAnh = this.convertLetterGrade(this.diemAnh);
   }
 
   //loc hoc sinh theo diem
